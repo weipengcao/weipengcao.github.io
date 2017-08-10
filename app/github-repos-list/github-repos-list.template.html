@@ -1,0 +1,21 @@
+
+<div>
+  <p><b>Repositories</b>: </p>
+  <ul style="list-style-type: none;">
+    <li ng-if="($ctrl.reposList.length <= 0)"><p>No repository is found.</p></li>
+    <li ng-repeat="repo in $ctrl.reposList" style="margin-top: 10px;">
+      <div>
+        <p>Name:
+          <a href="{{repo.html_url}}" style="text-decoration: none;">
+            {{repo.name | uppercase}}
+          </a>
+        </p>
+        <div style="padding-bottom: 10px;">
+          <p>Description:</p>
+          <p ng-if="repo.description <= 0">Can not find description for {{repo.name}}</p>
+          {{repo.description}}
+        </div>
+    </div>
+    </li>
+  </u>
+</div>
