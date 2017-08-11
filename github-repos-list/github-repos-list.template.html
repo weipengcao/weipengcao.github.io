@@ -14,7 +14,7 @@
             </p>
             <p>Description:</p>
             <p>
-              <span ng-if="repo.description <= 0" class="repos_notfound">Can not find description for {{repo.name}}</span>
+              <span ng-if="repo.description <= 0" ng-class="repos_notfound">Can not find description for {{repo.name}}</span>
               {{repo.description}}
             </p>
           </div>
