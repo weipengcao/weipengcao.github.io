@@ -8,11 +8,30 @@
     <script type="text/javascript" src="https://cdn.rawgit.com/weipengcao/weipengcao.github.io/7af23ec5/app.module.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/weipengcao/weipengcao.github.io/7af23ec5/github-repos-list/github-repos-list.module.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/weipengcao/weipengcao.github.io/7af23ec5/github-repos-list/github-repos-list.component.js"></script>
+
+    <style>
+      body {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0px;
+        padding-top: 100px;
+
+        background: gray; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left top, #777777, white); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom right, #777777, white); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom right, #777777, white); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom right, #777777, white); /* Standard syntax */
+      }
+      .repos_notfound {
+        color: red;
+      }
+    </style>
   </head>
-  <body style="margin-left: 10%; margin-right: 10%;">
+  <body>
     <header>
       <h1 style="text-align: center; padding-top: 10%; padding-bottom: 2%; background: #666666; color: #eeeeee; text-shadow: 0px 20px 10px black;">WEIPENG CAO</h1>
     </header>
+
     <github-repos-list></github-repos-list>
   </body>
 </html>
